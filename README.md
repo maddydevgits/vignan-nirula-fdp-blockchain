@@ -37,6 +37,18 @@ Madhu Parvathaneni alias MS is a Solutions Architect and mentor at Make Skilled.
     <td>4</td>
     <td>Create your first Smart Contract</td>
   </tr>
+  <tr>
+    <td>5</td>
+    <td>Create Smart Contract to store Registration Data</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Migrate Smart Contract onto Ganache</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Invoke Smart Contract Functions through Python Script</td>
+  </tr>
 </table>
 
 # Help Desk
