@@ -13,7 +13,7 @@ def connect_with_blockchain():
     
     # Select the contract
     with(open('../build/contracts/register.json') as f):
-        artifact_json=json.loads(f)
+        artifact_json=json.load(f)
         artifact_abi=artifact_json['abi']
         contract_address=artifact_json['networks']['5777']['address']
     
@@ -24,3 +24,10 @@ def connect_with_blockchain():
     
     return(contract,web3)
     
+name=input('Enter Name: ')
+emailid=input('Enter EmailId: ')
+mobile=input('Enter Mobile: ')
+username=input('Enter Username: ')
+password=input('Enter Password: ')
+tx_hash=contract.functions.signup(name,emailid,mobile,password,username).transact()
+web3.eth.wait_for_transaction_receipt()
